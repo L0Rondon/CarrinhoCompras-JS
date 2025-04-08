@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+</head>
+<header>
+    <nav class="Menu" id="Menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="galeria.html">Midia</a></li>
+            <li class="dropdown">
+                <a href="#Sobre" class="dropbtn">Sobre</a>
+                <ul class="dropdown-content">
+                    <li><a href="sobre.html">Informações</a></li>
+                    <li><a href="#InfoContat">Info. Contato</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html"><button class="btn-login">Faça login</button></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <Main>
+
+        <section class="carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Miniatura</th>
+                        <th>Tamanho</th>
+                        <th>Cor</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LaFrancé Moment</td>
+                        <td><img src="https://images.puma.net/images/310864/01/sv01/fnd/BRA/" alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Creme</option>
+                                <option>Preto</option>
+                                <option>Vermelho</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario">R$ 799,99</td>
+                        <td class="preco-total">R$ 799,9</td>
+                        <td><button class="remover-produto">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>Puma x Staple - Puma 180</td>
+                        <td><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396309/03/sv01/fnd/SEA/fmt/png/PUMA-x-STAPLE-PUMA-180-Sneakers"
+                                alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Único</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario">R$ 759,9</td>
+                        <td class="preco-total">R$ 759,9</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adidas adi2000</td>
+                        <td><img src="https://th.bing.com/th/id/OIP.Q7Zpqc4QQPajBDUzbdT1DAHaHa?rs=1&pid=ImgDetMain"
+                                alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Preto</option>
+                                <option>Branco</option>
+                                <option>Bege</option>
+                                <option>Cinza</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario">R$ 699,99</td>
+                        <td class="preco-total">R$ 699,99</td>
+                        <td><button class="remover-produto">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>Nike Air More Uptempo</td>
+                        <td><img src="https://artwalk.vtexassets.com/arquivos/ids/404424-800-auto?v=638223752551930000&width=800&height=auto&aspect=true"
+                                alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Branco</option>
+                                <option>Preto</option>
+                                <option>Vermelho</option>
+                                <option>Roxo</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario">R$ 1499,99</td>
+                        <td class="preco-total">R$ 1499,99</td>
+                        <td><button class="remover-produto">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-final">
+                <h3>Total Final: <span id="total-final">R$ 110,00</span></h3>
+            </div>
+        </section>
+
+    </Main>
+    <footer class="InfoContat" id="InfoContat">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer os produtos que desejar com alta qualidade.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#InfoContat">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@.com</p>
+                <p>Telefone: (99) 9000-9000</p>
+                <p>Endereço: Rua Irineu, 123, São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Só Boots. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <hr>
+        <a href="#Menu" title="Titulo"><img src="assets/images/favicon.ico" alt="iconetopo">
+    </footer>
+
+    <script src="assets/js/carrinho.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+
+
+main {
+    background-color:lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+/*estilo nav*/
+nav{
+    background-color: rgba(114, 185, 185, 0.67);
+    padding: 10px 0;/*espaçamento interno*/
+}
+nav ul{
+    list-style-type: none;/*remove a marcação da lista*/
+    margin: 0;
+    padding: 0;
+    display: flex;/*faz a lista ficar lado a lado(horizintal)*/
+    justify-content: center;/*centraliza  (horizontal)*/
+}
+nav ul li{
+    position: relative;/*necessario para o posicionamento do dropdown*/
+    margin: 0 15px;/*espaçamento entre os itens*/
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;/*remove o sublinhado*/
+    font-size: 18px;
+    padding: 10px;
+    display: block;/*torna o link clicavel em toda area*/
+    transition: color 0.3s;/*transição suave para a mudança de cor*/
+}
+nav ul li a:hover{
+    color: turquoise;/*Cor do texto ao passar o mouse*/
+}
+
+/*Estilo dropdown*/
+
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: rgb(232, 217, 194);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+nav ul li .dropdown-content li a:hover {
+    background-color: rgba(114, 185, 185, 0.67); /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+button {
+  padding: 10px; /* Espaçamento interno */
+  background-color:rgba(114, 185, 185, 0.67);
+  color: black; /* Cor do texto branco */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+label {
+  margin-bottom: 5px; /* Espaçamento inferior */
+  font-weight: bold; /* Negrito para o texto */
+}
+
+img{
+    margin: 25px;
+      width: 120px;
+      height: 120px;
+      border-radius: 360px;
+  }
+ /* Estiliza a tabela do carrinho */
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: midnightblue;
+  }
+  
+  th {
+    background-color:   
+   #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Estiliza o input de quantidade */
+  input.quantidade {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* Estiliza o botão de remover */
+  button.remover-produto {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c0392b;
+  }
+
+  /* Estiliza o total final */
+.total-final {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .total-final h3 {
+    color: #333;
+  }
+  
+  #total-final {
+    color: #e74c3c;
+  }
+  
+  button.remover-produto:hover {
+    background-color: #ef3950;
+  }
+
+/* Estilo do footer */
+footer {
+    background-color: rgba(114, 185, 185, 0.67);
+    color: black;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex-basis: 23%; /* Faz com que as seções ocupem 23% da largura, com espaço para margens */
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  .footer-section ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-section ul li a:hover {
+    color: turquoise;
+  }
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: turquoise;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+  }
+  .footer-bottom p {
+    margin: 0;
+  }
