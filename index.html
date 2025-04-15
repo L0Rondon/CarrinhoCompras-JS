@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba Produtos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="Menu" id="Menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#containerCarrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="produtos">Produtos</h1>
+        <section class="container" id="container">
+            <br>
+            <section id="moletom">
+                <div>
+                    <div class="card-produto">
+                        <h3 id="nome">Zip-up Hoodie 600GSM - PIET</h3>
+                        <img src="https://piet.com.br/cdn/shop/files/piet-online_0143.jpg?v=1727377367&width=2000"
+                            alt="Produto1">
+                        <br>
+                        <p id="valor">R$ 399,00</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+
+                    </div>
+                    <div class="card-produto">
+                        <h3 id="nome">Hoodie RE$UMO</h3>
+                        <img src="https://realblockkstar.com/cdn/shop/files/2_5600eb68-3cc0-4e9d-b658-cd7c1e5a6201.png?v=1718576693&width=600"
+                            alt="Produto2">
+                        <br>
+                        <p id="valor"> R$ 349,00</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+                    </div>
+                </div>
+            </section>
+            <section id="camiseta">
+                <div>
+                    <div class="card-produto">
+                        <h3 id="nome">Camiseta - Denim Tears</h3>
+                        <img src="https://www.copclub.com.br/cdn/shop/files/DT-058copy.webp?v=1734388471"
+                            alt="Produto3">
+                        <br>
+                        <p id="valor">R$ 839,90</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+                    </div>
+                    <div class="card-produto">
+                        <h3 id="nome">Camiseta Funny Cross</h3>
+                        <img src="https://cdn.awsli.com.br/2500x2500/1100/1100536/produto/227351096/image--3--cjmgy4m4zt.jpg"
+                            alt="Produto4">
+                        <br>
+                        <p id="valor">R$ 220,00</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+                    </div>
+                </div>
+            </section>
+
+            </div>
+
+
+            <section id="Tenis">
+                <div>
+                    <div class="card-produto">
+                        <h3 id="nome">Maison Mihara Yasuhiro</h3>
+                        <img src="https://clothbase.s3.amazonaws.com/uploads/319bef5c-8d92-4de4-836a-dbbc8d52c102/31-08-2019_mihara_originalsolebigginghamlowcutsneaker_black_a03fw702-blk_ja_1.jpg"
+                            alt="Produto5">
+                        <br>
+                        <p id="valor">R$ 1.499,99</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+
+                    </div>
+                    <div class="card-produto">
+                        <h3 id="nome">Puma LaFrancé Moment</h3>
+                        <img src="https://th.bing.com/th/id/OIP.OQpIPp9ShD-cMck6Ap8jmwAAAA?w=450&h=450&rs=1&pid=ImgDetMain"
+                            alt="Produto6">
+                        <br>
+                        <p id="valor">R$ 799,99</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Calça">
+                <div>
+                    <div class="card-produto">
+                        <h3 id="nome">Loose Fit Black Denim - PIET</h3>
+                        <img src="https://piet.com.br/cdn/shop/files/piet-online_0064_piet264.jpg?v=1716988294&width=2000"
+                            alt="Produto7">
+                        <br>
+                        <p id="valor">R$ 329,99</p>
+                       <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+                    </div>
+                    <div class="card-produto">
+                        <h3 id="nome">Calça Jeans - Chrome Hearts</h3>
+                        <img src="https://tudotem.com.br/cdn/shop/files/Design_sem_nome_2_baa2f0c9-b868-42ad-8cdd-005fe93839aa.png?v=1737867204"
+                            alt="Produto8">
+                        <br>
+                        <p id="valor">R$ 649,00</p>
+                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="containerCarrinho" id="containerCarrinho">
+                <h2>Carrinho</h2>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Total</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </section>
+
+    </main>
+
+    <footer id="InfoContat">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer os produtos que desejar com alta qualidade.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#InfoContat">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: twdrop@gmail.com</p>
+                <p>Telefone: (19) 9000-9000</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TW drop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/cadastrar.js"></script>
+</body>
+
+</html>

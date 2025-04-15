@@ -7,7 +7,7 @@ main {
 
 /*estilo nav*/
 nav{
-    background-color: rgba(114, 185, 185, 0.67);
+    background-color:white;
     padding: 10px 0;/*espaçamento interno*/
 }
 nav ul{
@@ -67,73 +67,96 @@ button {
   font-size: 16px; /* Tamanho da fonte */
 }
 
-label {
-  margin-bottom: 5px; /* Espaçamento inferior */
-  font-weight: bold; /* Negrito para o texto */
-}
-
-img{
-    margin: 25px;
-      width: 120px;
-      height: 120px;
-      border-radius: 360px;
+/* Estilo para o contêiner principal */
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    justify-content: left;
   }
- /* Estiliza a tabela do carrinho */
- table {
+  
+  
+  /* Estilo para cada card */
+  .card-produto{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+    display:block;
+    text-align: center;
+  }
+  .card-produto img{
+    margin: 25px;
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+  }
+  
+  /* Estilo para o título dos cards */
+  .card-produto h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color:black;
+  }
+  
+  /* Estilo para o parágrafo dos cards */
+  .card-produto p {
+    color: black;
+  }
+
+  .card-produto a{
+    color: black;
+  } 
+
+  button {
+    padding: 10px; /* Espaçamento interno */
+    background-color: lightgray;
+    color:black; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: color 0.3s;/*transição suave para a mudança de cor*/
+  }
+  button:hover{
+    color:turquoise;
+  }
+
+  table {
+    /* muda a tabela, com fundo escuro, bordas arredondadas e sombra */
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    color: midnightblue;
-  }
-  
-  th {
-    background-color:   
-   #f4f4f4;
-    font-weight: bold;
-  }
-  
-  /* Estiliza o input de quantidade */
-  input.quantidade {
-    width: 50px;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  /* Estiliza o botão de remover */
-  button.remover-produto {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #c0392b;
-  }
+    background: turquoise;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 
-  /* Estiliza o total final */
-.total-final {
-    text-align: right;
-    margin-top: 20px;
-  }
-  
-  .total-final h3 {
-    color: #333;
-  }
-  
-  #total-final {
-    color: #e74c3c;
-  }
-  
-  button.remover-produto:hover {
-    background-color: #ef3950;
-  }
+table, th, td {
+    /* Borda azulada nas partes da tabela */
+    border: 1px solid #3b657a;
+}
 
+th{
+    /* Ajusta o espaçamento e deixa o texto claro */
+    padding: 12px;
+    text-align: left;
+    color:black;
+}
+td {
+    /* Ajusta o espaçamento e deixa o texto claro */
+    padding: 12px;
+    text-align: left;
+    color:midnightblue;
+}
+
+th {
+    /* Fundo mais escuro para os cabeçalhos da tabela */
+    background-color: mintcream;
+}
 /* Estilo do footer */
 footer {
     background-color: rgba(114, 185, 185, 0.67);
