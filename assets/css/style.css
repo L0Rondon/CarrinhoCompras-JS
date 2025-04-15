@@ -214,7 +214,7 @@ footer {
     transition: color 0.3s;
   }
   .social-links a:hover {
-    color: turquoise;
+    color: white;
   }
   .footer-bottom {
     text-align: center;

@@ -9,6 +9,30 @@
 </head>
 
 <body>
+   <button id="btnTocar">Tocar Música</button>
+
+    <audio id="musica" loop>
+      <source src="musica.mp3" type="audio/mpeg">
+      Seu navegador não suporta o áudio.
+    </audio>
+  
+    <script>
+      const botao = document.getElementById("btnTocar");
+      const musica = document.getElementById("musica");
+  
+      botao.addEventListener("click", () => {
+        musica.play()
+          .then(() => {
+            console.log("Música tocando!");
+          })
+          .catch((erro) => {
+            console.error("Erro ao tentar tocar a música:", erro);
+          });
+      });
+    </script>
+    <!-- <audio preload="metadata" autoplay controls loop>
+        <source src="assets/midia/jingle.mp3" type="audio/mpeg">
+    </audio> -->
     <header>
         <nav class="Menu" id="Menu">
             <ul>
@@ -25,20 +49,20 @@
             <section id="moletom">
                 <div>
                     <div class="card-produto">
-                        <h3 id="nome">Zip-up Hoodie 600GSM - PIET</h3>
+                        <h3>Zip-up Hoodie 600GSM - PIET</h3>
                         <img src="https://piet.com.br/cdn/shop/files/piet-online_0143.jpg?v=1727377367&width=2000"
                             alt="Produto1">
                         <br>
-                        <p id="valor">R$ 399,00</p>
+                        <p>R$ 399,00</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
 
                     </div>
                     <div class="card-produto">
-                        <h3 id="nome">Hoodie RE$UMO</h3>
+                        <h3>Hoodie RE$UMO</h3>
                         <img src="https://realblockkstar.com/cdn/shop/files/2_5600eb68-3cc0-4e9d-b658-cd7c1e5a6201.png?v=1718576693&width=600"
                             alt="Produto2">
                         <br>
-                        <p id="valor"> R$ 349,00</p>
+                        <p> R$ 349,00</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
                     </div>
                 </div>
@@ -46,19 +70,19 @@
             <section id="camiseta">
                 <div>
                     <div class="card-produto">
-                        <h3 id="nome">Camiseta - Denim Tears</h3>
+                        <h3>Camiseta - Denim Tears</h3>
                         <img src="https://www.copclub.com.br/cdn/shop/files/DT-058copy.webp?v=1734388471"
                             alt="Produto3">
                         <br>
-                        <p id="valor">R$ 839,90</p>
+                        <p>R$ 839,90</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
                     </div>
                     <div class="card-produto">
-                        <h3 id="nome">Camiseta Funny Cross</h3>
+                        <h3>Camiseta Funny Cross</h3>
                         <img src="https://cdn.awsli.com.br/2500x2500/1100/1100536/produto/227351096/image--3--cjmgy4m4zt.jpg"
                             alt="Produto4">
                         <br>
-                        <p id="valor">R$ 220,00</p>
+                        <p>R$ 220,00</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
                     </div>
                 </div>
@@ -70,20 +94,20 @@
             <section id="Tenis">
                 <div>
                     <div class="card-produto">
-                        <h3 id="nome">Maison Mihara Yasuhiro</h3>
+                        <h3>Maison Mihara Yasuhiro</h3>
                         <img src="https://clothbase.s3.amazonaws.com/uploads/319bef5c-8d92-4de4-836a-dbbc8d52c102/31-08-2019_mihara_originalsolebigginghamlowcutsneaker_black_a03fw702-blk_ja_1.jpg"
                             alt="Produto5">
                         <br>
-                        <p id="valor">R$ 1.499,99</p>
+                        <p>R$ 1.499,99</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
 
                     </div>
                     <div class="card-produto">
-                        <h3 id="nome">Puma LaFrancé Moment</h3>
+                        <h3>Puma LaFrancé Moment</h3>
                         <img src="https://th.bing.com/th/id/OIP.OQpIPp9ShD-cMck6Ap8jmwAAAA?w=450&h=450&rs=1&pid=ImgDetMain"
                             alt="Produto6">
                         <br>
-                        <p id="valor">R$ 799,99</p>
+                        <p>R$ 799,99</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
                     </div>
                 </div>
@@ -91,19 +115,19 @@
             <section id="Calça">
                 <div>
                     <div class="card-produto">
-                        <h3 id="nome">Loose Fit Black Denim - PIET</h3>
+                        <h3>Loose Fit Black Denim - PIET</h3>
                         <img src="https://piet.com.br/cdn/shop/files/piet-online_0064_piet264.jpg?v=1716988294&width=2000"
                             alt="Produto7">
                         <br>
-                        <p id="valor">R$ 329,99</p>
+                        <p>R$ 329,99</p>
                        <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
                     </div>
                     <div class="card-produto">
-                        <h3 id="nome">Calça Jeans - Chrome Hearts</h3>
+                        <h3>Calça Jeans - Chrome Hearts</h3>
                         <img src="https://tudotem.com.br/cdn/shop/files/Design_sem_nome_2_baa2f0c9-b868-42ad-8cdd-005fe93839aa.png?v=1737867204"
                             alt="Produto8">
                         <br>
-                        <p id="valor">R$ 649,00</p>
+                        <p>R$ 649,00</p>
                         <button class="btn-login" onclick="adicionarProduto()">Comprar</button>
                     </div>
                 </div>
@@ -111,7 +135,7 @@
             <section class="containerCarrinho" id="containerCarrinho">
                 <h2>Carrinho</h2>
                 <br>
-                <table>
+                <table id="carrinho">
                     <thead>
                         <tr>
                             <th>Produto</th>
@@ -121,7 +145,8 @@
                             <th>Ação</th>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody id="carrinho-items">
+                    </tbody>
                 </table>
             </section>
         </section>
